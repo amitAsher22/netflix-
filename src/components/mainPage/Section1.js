@@ -3,6 +3,8 @@ import React from "react";
 import '../../css/mainPage/mainPage.css'
 /// logo
 import logo from '../../images/logoNetflix.png'
+/// import react-icon
+import { IoIosArrowForward } from 'react-icons/io';
 
 
 
@@ -15,8 +17,8 @@ function Section1 (){
      <div className="divRegisterAndLangauge">
      <div>
      <select className="select">
-         <option value='English'>English</option>
-         <option value='עברית'>עברית</option>
+         <option className="option" value='English'>English</option>
+         <option className="option" value='עברית'>עברית</option>
        </select>
      </div>
        <div>
@@ -26,11 +28,11 @@ function Section1 (){
      </div>
     </div>
     <div>
-      <h1>Unlimited movies, TV shows, and more</h1>
-      <p>Watch anywhere. Cancel anytime.</p>
-      <div>
-        <input/>
-        <button>get started</button>
+      <h1 className="titleSection1">Unlimited movies, TV shows, and more</h1>
+      <p className="pSection1">Watch anywhere. Cancel anytime.</p>
+      <div className="divGeStart">
+        <input className="getStartInput" placeholder="Email address"/>
+        <button className="getStartBtn">get started <IoIosArrowForward/></button>
       </div>
     </div>
 

@@ -1,8 +1,10 @@
 .backgroundImg{
-  background: url('../../images/netlix-bg.jpg');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100% , rgba(0, 0, 0, 0.5)100%), url('../../images/netlix-bg.jpg') ;
   background-repeat: no-repeat;
   background-size: cover;
   height: 30em;
+  padding: 0.5rem;
+   
 }
 
 .navBar{
@@ -10,6 +12,7 @@
   justify-content: space-between;
   padding: 0.5em;
   align-items: center;
+ 
 }
 
 .divRegisterAndLangauge{
@@ -39,8 +42,73 @@
   border-radius: 2px;
   
 }
-option{
+.option{
   background-color: gray;
   color: white;
   
+}
+
+.titleSection1{
+ text-align: center;
+ color: white;
+ font-size: 3rem;
+}
+.pSection1{
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.divGeStart{
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.getStartBtn{
+  background-color: red;
+  color: white;
+  padding: 0.5rem 0.55rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  border: none;
+ 
+}
+
+.getStartInput{
+  width: 40%;
+  padding: 1em;
+  font-size: 1em;
+  border: none;
+}
+
+@media(orientation:portrait){
+ .divRegisterAndLangauge{
+   display: flex;
+   gap: 1.5em;
+   justify-content: space-between;
+  
+ }
+ .logo{
+  width: 30%;
+ }
+ .signIn{
+  font-size: 0.8rem;
+  padding: 0.3rem 2em;
+  
+ }
+ .titleSection1{
+  font-size: 1.8rem;
+ }
+ .pSection1{
+  font-size: 1.1rem;
+ }
+ .divGeStart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ 
 }
